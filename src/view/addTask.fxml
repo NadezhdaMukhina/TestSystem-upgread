@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="201.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TaskController">
+   <children>
+      <HBox layoutX="14.0" layoutY="83.0" prefHeight="43.0" prefWidth="733.0">
+         <children>
+            <TextField fx:id="projectTaskText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="topicTaskText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="typeTaskText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="priorityTaskText" prefHeight="42.0" prefWidth="100.0" />
+            <TextField fx:id="userTaskText" prefHeight="42.0" prefWidth="109.0" />
+            <TextArea fx:id="descriptionTaskText" prefHeight="43.0" prefWidth="210.0" />
+         </children>
+      </HBox>
+      <Button fx:id="addTaskButton" layoutX="255.0" layoutY="147.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" text="Добавить запись" />
+      <Label layoutX="158.0" layoutY="14.0" text="Укажите данные задачи для добавления:" textFill="#a10b0b">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <HBox layoutX="22.0" layoutY="56.0" prefHeight="27.0" prefWidth="717.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="90.0" text="Проект" />
+            <Label prefHeight="17.0" prefWidth="119.0" text="Тема" />
+            <Label prefHeight="17.0" prefWidth="84.0" text="Тип" />
+            <Label prefHeight="17.0" prefWidth="99.0" text="Приоритет" />
+            <Label prefHeight="17.0" prefWidth="115.0" text="Исполнитель" />
+            <Label prefHeight="17.0" prefWidth="90.0" text="Описание" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
